@@ -25,8 +25,8 @@
 
 
 
-    
-    
+
+
     <style rel="stylesheet">
         /* TEMPLATE STYLES */
 
@@ -99,13 +99,12 @@
         .navbar .btn-group .dropdown-menu a:active {
             color: #fff !important;
         }
-        
-        .clsDatePicker {
-    z-index: 1051;
-}
-        
-}
 
+        .clsDatePicker {
+            z-index: 1051;
+        }
+
+        }
     </style>
 
     <link rel="shortcut icon" href="favicon.ico" type="favicon">
@@ -124,23 +123,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="http://www.skiddydrive.com">Home</a>
+                        <a class="nav-link" href="https://www.skiddydrive.com">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about_us.html">About us </a>
+                        <a class="nav-link" href="https://www.skiddydrive.com/about_us.html">About us </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Packages<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="https://www.skiddydrive.com/packages.html">Packages<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        <a class="nav-link" href="https://www.skiddydrive.com/gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contact us</a>
+                        <a class="nav-link" href="https://www.skiddydrive.com/contact_us.html">Contact us</a>
                     </li>
 
                 </ul>
-                
+
                 <ul class="navbar-nav ml-auto nav-flex-icons">
                     <li class="nav-item">
                         <a href="https://twitter.com/skiddydrive" target="_blank" class="nav-link waves-effect waves-light"><i class="fa fa-twitter"></i></a>
@@ -161,9 +160,10 @@
         </div>
     </nav>
     <!--/.Navbar-->
+    <!--/.Navbar-->
 
     <div class="clearfix">...</div>
-    <div style="margin-top:12vh"></div>
+    <div style="margin-top:11vh"></div>
     <div class="container text-center">
 
         <div id="carousel-package" class="carousel slide carousel-fade" data-ride="carousel">
@@ -173,7 +173,7 @@
                 <li data-target="#carousel-package" data-slide-to="1"></li>
                 <li data-target="#carousel-package" data-slide-to="2"></li>
                 <li data-target="#carousel-package" data-slide-to="3"></li>
-               
+
             </ol>
             <!--/.Indicators-->
             <!--Slides-->
@@ -225,7 +225,7 @@
         </ul>
     </div>
     <!-- Tab panels -->
-    <div class="container tab-content">
+    <div class="container jumbotron tab-content">
         <!--Panel 1-->
         <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
             <!--Card content-->
@@ -276,7 +276,7 @@
                 <br>
                 <!-- <a href="#" class="btn btn-primary">Book Now! </a>-->
                 <div class="text-center">
-                    <button type="button" class="btn light-blue darken-2" data-toggle="modal" data-target="#modalPopOneNight">
+                    <button type="button" class="btn btn-unique" data-toggle="modal" data-target="#modalPopOneNight">
                             Book Now!
                             </button>
                 </div>
@@ -351,7 +351,7 @@
                 <br>
 
                 <div class="text-center">
-                    <button type="button" class="btn light-blue darken-2" data-toggle="modal" data-target="#modalPopTwoNight">
+                    <button type="button" class="btn btn-unique" data-toggle="modal" data-target="#modalPopTwoNight">
                             Book Now!
                             </button>
                 </div>
@@ -394,28 +394,28 @@
                     <div class="modal-body mb-0">
                         <div class="form-sm">
                             <i class="fa fa-user" aria-hidden="true"></i>
-                            <input type="text" id="form19" placeholder="Name" class="form-control" name="Name">
+                            <input type="text" id="form19" placeholder="Name" class="form-control" name="Name" value="required">
 
                         </div>
 
                         <div class="form-sm">
                             <i class="fa fa-envelope prefix"></i>
-                            <input type="email" id="form20" placeholder="Email" class="form-control" name="Email">
+                            <input type="email" id="form20" placeholder="Email" class="form-control" name="Email" value="required">
 
                         </div>
 
                         <div class="form-sm">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <input type="text" id="idTourDateDetails" placeholder="Date of Arrival" class="form-control clsDatePicker" name="Date">
+                            <input type="date" placeholder="Date of Arrival" class="form-control" name="Date" required id="datefield">
 
                         </div>
-                       
-       
-                       
+
+
+
 
                         <div class="form-sm">
                             <i class="fa fa-group" aria-hidden="true"></i>
-                            <input type="Number" id="form21" placeholder="Number of People" class="form-control" name="Number">
+                            <input type="Number" id="form21" placeholder="Number of People" class="form-control" name="Number" value="required">
 
                         </div>
 
@@ -426,11 +426,16 @@
                         </div>
 
                         <div class="text-center mt-1-half">
-                            <button class="btn btn-info mb-2">Submit <i class="fa fa-send ml-1"></i></button>
+                            <button class="btn btn-unique mb-2">Submit <i class="fa fa-send ml-1"></i></button>
                         </div>
 
                     </div>
+
                     <input type="hidden" name="_subject" value="One Night Camping" />
+                    <input type="hidden" name="_format" value="plain" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_cc" value="smibin.km@gmail.com" />
+                    <input type="hidden" name="_next" value="https://www.skiddydrive.com/thank_you.html" />
                 </form>
             </div>
         </div>
@@ -465,7 +470,7 @@
 
                         <div class="form-sm">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <input type="text" id="datepicker1" placeholder="Date of Arrival" class="form-control" name="Date">
+                            <input type="date" placeholder="Date of Arrival" class="form-control" name="Date" required id="datefield1">
 
                         </div>
 
@@ -483,11 +488,15 @@
                         </div>
 
                         <div class="text-center mt-1-half">
-                            <button class="btn btn-info mb-2">Submit <i class="fa fa-send ml-1"></i></button>
+                            <button class="btn btn-unique mb-2">Submit <i class="fa fa-send ml-1"></i></button>
                         </div>
 
                     </div>
-                    <input type="hidden" name="_subject" value="Two Nights Camping" />
+                    <input type="hidden" name="_subject" value="Two Night Camping" />
+                    <input type="hidden" name="_format" value="plain" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_cc" value="smibin.km@gmail.com" />
+                    <input type="hidden" name="_next" value="https://www.skiddydrive.com/thank_you.html" />
                 </form>
             </div>
         </div>
@@ -606,18 +615,29 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
     <script type="text/javascript" src="js/mymap.js"></script>
-    
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    
+
+<!--    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+
     <script>
         new WOW().init();
-        
     </script>
-     
-        
-    <!--Google Maps-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHu7ryCt_r8PRcbxAU4w-gXqHUUw53Kx0&callback=myMap"></script>
 
+    <script>
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("datefield").setAttribute("min", today);
+        document.getElementById("datefield1").setAttribute("min", today);
+    </script>
 
 </body>
 
