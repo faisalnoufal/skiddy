@@ -27,7 +27,7 @@ function myMap() {
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        title: 'Sharing Houseboats, Alleppy',
+        title: 'Skiddy Drive Adventures, Gudallur, The Nilgiris',
         icon: image
     });
     
